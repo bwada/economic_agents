@@ -1,1 +1,6 @@
 /target
+/sim_results
+.vscode
+
+# python related processing
+venv

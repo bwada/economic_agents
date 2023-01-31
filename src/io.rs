@@ -1,5 +1,5 @@
 use std::fs::File;
-use std::io::{Write, Error};
+use std::io::{Write};
 
 
 pub fn write_2d_arr<Matrix: AsRef<[Row]>, Row: AsRef<[i8]>>(features: Matrix, file: &str) {
@@ -12,6 +12,6 @@ pub fn write_2d_arr<Matrix: AsRef<[Row]>, Row: AsRef<[i8]>>(features: Matrix, fi
     };
 }
 
-pub fn read_2d_arr<Matrix: AsRef<[Row]>, Row: AsRef<[i8]>>(features: Matrix, file: &str, ) {
+// pub fn read_2d_arr<Matrix: AsRef<[Row]>, Row: AsRef<[i8]>>(features: Matrix, file: &str, ) {
 
-}
+// }

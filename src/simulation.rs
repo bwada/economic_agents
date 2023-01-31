@@ -1,6 +1,3 @@
-use core::num;
-use std::{vec, sync::PoisonError};
-
 use rand_distr::{Normal, Distribution};
 use rand::{Rng, thread_rng};
 use crate::agents;

@@ -6,7 +6,6 @@ const MAX_LEVEL: i8 = 10;
 #[derive(Clone)]
 pub struct RpgAgent {
     stats: [i8; 3],
-    alive: bool,
 }
 
 impl RpgAgent {
@@ -16,9 +15,6 @@ impl RpgAgent {
             let stat_drop = rng.gen_range(0..3);
             self.stats[stat_drop] = (self.stats[stat_drop]-1).max(0);
         }
-    }
-    pub fn is_alive(&self) -> &bool {
-        &self.alive
     }
     pub fn get_stats(&self) -> &[i8; 3] {
         &self.stats
@@ -49,14 +45,12 @@ impl RpgAgent {
 pub fn make_agent() -> RpgAgent {
     RpgAgent {
         stats: [0, 0, 0],
-        alive: true,
     }
 }
 
 pub fn make_agent_uniform(level: i8) -> RpgAgent {
     RpgAgent { 
         stats: [level, level, level], 
-        alive: true 
     }
 }
 
