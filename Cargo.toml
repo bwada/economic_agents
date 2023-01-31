@@ -6,6 +6,7 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+array2d = "0.3.0"
 plotters = "0.3.4"
 rand = "0.8.5"
 rand_distr = "0.4.3"
