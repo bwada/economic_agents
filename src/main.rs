@@ -13,6 +13,6 @@ fn main() {
     // io::write_2d_arr(readout, "sim_results/specialization_1.txt")
     // visualizer::scatter_3d(readout, "sim_results/test.png")
 
-
+    ecosystem::run_eco_1(10, 10)
 
 }
